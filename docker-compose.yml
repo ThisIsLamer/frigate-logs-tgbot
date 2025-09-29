@@ -1,0 +1,10 @@
+services:
+  ticket_backend_iaas:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    command: npm run start
+    environment:
+      TZ: Europe/Moscow
+    restart: unless-stopped
