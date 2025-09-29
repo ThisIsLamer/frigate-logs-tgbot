@@ -39,6 +39,7 @@ const frigateEvents = async (payload: FrigateEventUpdate) => {
     }
 
     if (payload.type === "new") {
+      if (payload.after.stationary) return
       const imageUrl = `http://${config.frigate.host}:${config.frigate.port}/api/events/${payload.after.id}/thumbnail.webp`;
       const imageBuffer = await getImageBuffer(imageUrl)
       
