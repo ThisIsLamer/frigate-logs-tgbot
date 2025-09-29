@@ -1,5 +1,5 @@
 services:
-  ticket_backend_iaas:
+  frigate_logs:
     build:
       context: .
       dockerfile: Dockerfile
