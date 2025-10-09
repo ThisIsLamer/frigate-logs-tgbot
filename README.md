@@ -52,12 +52,10 @@ npm start
 - `FRIGATE_PORT` - порт Frigate сервера (по умолчанию: 5000)
 
 ### MQTT
-- `MQTT_BROKER_URL` - URL MQTT брокера
 - `MQTT_HOST` - хост MQTT брокера
 - `MQTT_PORT` - порт MQTT брокера (по умолчанию: 1883)
 - `MQTT_USERNAME` - имя пользователя MQTT (опционально)
 - `MQTT_PASSWORD` - пароль MQTT (опционально)
-- `MQTT_TOPIC_PREFIX` - префикс для MQTT топиков
 
 ### Приложение
 - `NODE_ENV` - окружение (development/production)
